@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Layout </title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+</style>
+
+
+<style>
+    :root {
+        --primary: #9947e5c9;
+        --text-color: azure;
+        --secondary-color: #b8c0ff;
+    }
+
+    body {
+        background-color: var(--secondary-color);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+
+        background-color: var(--primary);
+        padding: 12px 0px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    ul li {
+        list-style: none;
+        display: inline;
+        padding: 23px;
+        font-weight: bolder;
+        color: var(--text-color);
+
+
+    }
+
+
+    ul li a {
+        color: var(--text-color);
+        text-decoration: none;
+
+
+    }
+
+    main {
+        background-color: black;
+        color: white;
+        padding: 34px;
+    }
+
+    .container {
+
+        background-color: red;
+        text-align: center;
+        padding: 55px 23px;
+        margin: 24px 34px;
+
+    }
+
+    .box1 {
+        background-color: pink;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0 24px;
+    }
+
+    .box2 {
+        background-color: blue;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0 24px;
+    }
+
+    .text-box {
+        padding: 34px;
+        border: 2px solid white;
+        text-align: center;
+        margin: 0 23vw;
+
+        border-radius: 18px;
+
+    }
+
+    footer {
+        border-radius: 34px;
+        height: 80px;
+
+
+        margin: 23px;
+        background-color: rgb(243, 214, 178);
+    }
+
+    .circle {
+        background: pink;
+        height: 51px;
+        width: 84px;
+        position: fixed;
+        right: 24px;
+        bottom: 12px;
+        border: 2px solid black;
+        border-radius: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="">About us </a></li>
+                <li><a href="">Contact us </a></li>
+                <li><a href="">Our services </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="box1">
+                
+
+            </div>
+            <div class="box2">
+
+            </div>
+
+        </div>
+
+        <div class="text-box">
+            <p> welcome to our website</p>
+        </div>
+
+        <div class="circle" style="background: linear-gradient(to bottom, #455463, #00bcd4); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: white;">click</h2>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
